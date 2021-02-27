@@ -3,7 +3,7 @@ layout: post
 title:  "Github Showcase"
 date:   2021-02-26 09:09:00 -0500
 repo: https://github.com/roytanaka/roytanaka.github.io/
-bg: /assets/image/Flat-Mountains.svg
+bg: ./assets/image/Flat-Mountains.svg
 repeat: no-repeat
 pin: true
 ---
