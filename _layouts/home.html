@@ -25,7 +25,10 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
         {%- if post.repo -%}
-        <a href="{{post.repo}}" target="_blank" rel="noopener noreferrer">Go to Repository</a>
+        <p><a href="{{post.repo}}" target="_blank" rel="noopener noreferrer">Go to Repository</a></p>
+        {%- endif -%}
+        {%- if post.demo -%}
+        <p><a href="{{post.demo}}" target="_blank" rel="noopener noreferrer">Live demo</a></p>
         {%- endif -%}
       </li>
       {%- endfor -%}
