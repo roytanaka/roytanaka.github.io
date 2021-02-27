@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "1 Billion Seconds Calculator"
 date:   2020-01-03 19:09:29 -0500
 repo: https://github.com/roytanaka/billion-seconds/

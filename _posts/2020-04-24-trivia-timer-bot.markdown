@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "Trivia Timer Discord Bot"
 date:   2020-04-24 19:09:29 -0500
-categories: jekyll update
 repo: https://github.com/roytanaka/trivia-timer-bot
 bg: ./assets/image/Dragon-Scales.svg
 

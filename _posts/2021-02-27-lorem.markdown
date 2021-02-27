@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Lorem ipsum dolor sit amet elit
 date:   2021-02-27 12:32:00 -0500
 repo: https://github.com/roytanaka/roytanaka.github.io/

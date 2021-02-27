@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Github Showcase"
 date:   2021-02-26 09:09:00 -0500
 repo: https://github.com/roytanaka/roytanaka.github.io/
