@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  .full-screen {
+    overflow: scroll;
+    display: grid;
+    grid-template:
+      ".    .    ." 1fr
+      ". content ." auto
+      ".    .    ." 1fr / 1fr min-content 1fr;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    background: #4ca1af; 
+    background-image: linear-gradient(to left, #4ca1af, #182527); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+
+    article {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      padding: 1.5rem;
+      grid-area: content;
+      min-width: 300px;
+      @media (min-width: 768px) {
+        & {
+          display: grid;
+          grid-template:
+            "title description" min-content
+            "title action" min-content / 4fr 3fr;
+          min-width: 700px;
+          column-gap: 2rem;
+        }
+        .title{
+          text-align: right;
+        }
+      }
+      .title {
+        grid-area: title;
+        place-self: center;
+        @include font-display;
+        margin-bottom: 1rem;
+      }
+      .description {
+        grid-area: description;
+      }
+      .action {
+        grid-area: action;
+        margin-top: 1rem;
+      }
+      .action a {
+        display: inline-block;
+        @include font-base($fs-base, normal, $white);
+        background-color: $primary;
+        padding: 0.3em 0.7em;
+        margin-right: 0.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.no-repeat {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
