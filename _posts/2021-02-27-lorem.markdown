@@ -1,0 +1,9 @@
+---
+layout: post
+title:  Lorem ipsum dolor sit amet elit
+date:   2021-02-27 12:32:00 -0500
+repo: https://github.com/roytanaka/roytanaka.github.io/
+demo: '#'
+bg: /assets/image/Wintery-Sunburst.svg
+---
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid, reprehenderit cumque vitae quisquam suscipit architecto corporis incidunt. Ullam fugiat repudiandae eaque est sapiente necessitatibus exercitationem, voluptates amet dolores. Reiciendis praesentium earum, doloremque in veniam culpa ipsum, eius nam alias ab illum nobis accusamus enim totam ducimus dolor similique quidem? 
