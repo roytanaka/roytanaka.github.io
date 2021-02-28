@@ -6,3 +6,11 @@ demo: https://roytanaka.github.io/billion-seconds/
 bg: ./assets/image/Large-Triangles.svg
 ---
 Calculate your billion seconds birthday by entering your date and time of your birth. Featured on <a href="https://brownspaceman.com" target="_blank">Brown SpaceMan</a> blog. 
+### Tech Stack
+- JavaScript
+- Sass
+- [Babel](https://babeljs.io)
+- [Webpack](https://webpack.js.org)
+- [animate.css](https://animate.style)
+- [handlebars](https://handlebarsjs.com)
+- [moment.js](https://momentjs.com)
