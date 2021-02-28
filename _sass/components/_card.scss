@@ -40,7 +40,7 @@
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
-    transition: background-color .25s ease;
+    transition: background-color .25s ease-in-out;
     &::before{
       content: none;
     }
