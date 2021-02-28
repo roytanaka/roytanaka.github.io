@@ -6,6 +6,7 @@
   overflow: auto;
   scroll-snap-type: y mandatory;
   .full-screen {
+    padding-bottom: 8rem;
     overflow: scroll;
     display: grid;
     grid-template:
@@ -21,49 +22,6 @@
     background-repeat: repeat;
     background-position: center;
 
-    article {
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 5px;
-      padding: 1.5rem;
-      grid-area: content;
-      min-width: 300px;
-      @media (min-width: 768px) {
-        & {
-          display: grid;
-          grid-template:
-            "title description" min-content
-            "title action" min-content / 4fr 3fr;
-          min-width: 700px;
-          column-gap: 2rem;
-        }
-        .title{
-          text-align: right;
-        }
-      }
-      .title {
-        grid-area: title;
-        place-self: center;
-        @include font-display;
-        margin-bottom: 1rem;
-      }
-      .description {
-        grid-area: description;
-      }
-      .action {
-        grid-area: action;
-        margin-top: 1rem;
-      }
-      .action a {
-        display: inline-block;
-        @include font-base($fs-base, normal, $white);
-        background-color: $primary;
-        padding: 0.3em 0.7em;
-        margin-right: 0.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 10px;
-      }
-    }
   }
 }
 

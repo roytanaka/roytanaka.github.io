@@ -1,0 +1,55 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 1.5rem;
+  grid-area: content;
+  min-width: 300px;
+  @media screen and (min-width: 768px) {
+    & {
+      display: grid;
+      grid-template:
+        "title description" min-content
+        "title action" min-content / 5fr 4fr;
+      min-width: 700px;
+      column-gap: 2rem;
+    }
+    .card__title{
+      text-align: right;
+      font-size: 2.5rem !important;
+    }
+  }
+  .card__title {
+    @include font-display;
+    grid-area: title;
+    place-self: center;
+    margin-bottom: 1rem;
+  }
+  .card__description {
+    grid-area: description;
+  }
+  .card__action {
+    grid-area: action;
+    margin-top: 1rem;
+  }
+  .card__action a {
+    display: inline-block;
+    @include font-base(.9rem, 700, $p-dark);
+    border: 2px solid $p-dark;
+    padding: 0.5em 0.7em;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color .25s ease;
+    &::before{
+      content: none;
+    }
+    &:hover{
+      background-color: $p-dark;
+      color: $white;
+    }
+  }
+  h3{
+    margin-top: 1rem;
+  }
+}

@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-{% assign pinned = site.posts | sort: "pin" | reverse %}
+{% assign pinned = site.posts | sort: 'date' | sort: 'pin'  | reverse %}
 {%- if site.posts.size > 0 -%} {%- for post in pinned -%}
 <section class="full-screen {{post.repeat}}" style="background-image: url({{post.bg}});">
-  <article>
-    <h2 class="title">{{ post.title | escape }}</h2>
-    <p class="description">{{ post.content | remove: '<p>' | remove: '</p>'}}</p>
-    <div class="action">
+  <!-- background by SVGBackgrounds.com -->
+  <article class="card">
+    <h2 class="card__title">{{ post.title | escape }}</h2>
+    <div class="card__description">{{ post.content }}</div>
+    <div class="card__action">
       {%- if post.repo -%}
       <a href="{{post.repo}}" target="_blank" rel="noopener noreferrer">Repository</a>
       {%- endif -%} {%- if post.demo -%}

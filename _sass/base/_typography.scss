@@ -16,8 +16,53 @@
     size: $font-size;
   }
   color: $color;
+  line-height: 1;
 }
 
 body {
   @include font-base;
+}
+
+@each $h, $size in $headers {
+  .#{$h},
+  #{$h} {
+    @include font-base($size, 700);
+    margin-bottom: 0.3rem;
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $p-dark;
+  font-weight: 700;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $s-dark;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform-origin: center;
+    transform: scale(0);
+    transition: 0.1s linear;
+  }
+  &:hover::before {
+    transform: scale(1);
+  }
+}
+
+li {
+  margin-left: 1rem;
+  line-height: 1.5;
+  &::before {
+    content: "•";
+    color: $black;
+    font-weight: 700;
+    display: inline-block;
+    width: .7em;
+    margin-left: -1em;
+  }
 }
